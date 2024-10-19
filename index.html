@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    
+    let text=prompt("Enter your choice (rock , paper , scissors)");
+    let user=text.toLowerCase();
+    
+
+   const choices = ["rock" , "paper" , "scissors"];
+    comp=(choices[Math.floor(Math.random() * 3)]);
+
+    
+    if(user === 'rock' || user === 'paper' || user === 'scissors')
+    {
+        alert("Your choice - " + user);
+            if (user === comp) {
+            alert("It's tie");
+        } 
+        else if ((user === 'rock' && comp === 'scissors') ||
+                    (user === 'paper' && comp === 'rock') ||
+                    (user === 'scissors' && comp === 'paper'))
+                     {
+            alert("You Wins");
+        } 
+        else
+         {
+            alert("Computer Wins");
+        }
+        
+        alert("Computer choice - " + comp);
+
+    }
+    else
+    {
+        alert("Error! Try again");
+    }
+
+</script>
+<body>
+   
+</body>
+</html>
